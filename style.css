@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Shrikhand&display=swap');
+:root{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family:'Open Sans',Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-family: 'Shrikhand','Courier New', Courier, monospace;
+}
+a.red{
+    font-weight: bold;
+
+}
+p{
+    font-size: 1.2rem;
+}
+.red{
+    color:red;
+}
+.page{
+    animation:slide-in 2s; 
+}
+button{
+    border: none;
+    padding:1em;
+    margin: 1em;
+    animation: appear 5s;
+}
+@keyframes slide-in{
+    0%{
+        transform:translateX(-999px);
+
+    }
+    100%{
+       transform:  translateX(0);
+    }
+}
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
